@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>CXtreme - Bottom</title>
+<LINK href="menu.css" type=text/css rel=stylesheet>
+<style type="text/css">
+#divLinks   {position:absolute; left:0px; top:0px;}
+#divLinks a {color:#336699; font-family:verdana,arial,helvetica,sans-serif; font-size:12px; font-weight:700;}
+#divMessage {position:absolute; left:500px; width:150px; top:0px;}
+</style>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+/**********************************************************************************   
+ChangeText 
+*   Copyright (C) 2001 <a href="/dhtmlcentral/thomas_brattli.asp">Thomas Brattli</a>
+*   This script was released at DHTMLCentral.com
+*   Visit for more great scripts!
+*   This may be used and changed freely as long as this msg is intact!
+*   We will also appreciate any links you could give us.
+*
+*   Made by <a href="/dhtmlcentral/thomas_brattli.asp">Thomas Brattli</a> 
+*********************************************************************************/
+
+function lib_bwcheck(){ //Browsercheck (needed)
+	this.ver=navigator.appVersion
+	this.agent=navigator.userAgent
+	this.dom=document.getElementById?1:0
+	this.opera5=this.agent.indexOf("Opera 5")>-1
+	this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom && !this.opera5)?1:0; 
+	this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom && !this.opera5)?1:0;
+	this.ie4=(document.all && !this.dom && !this.opera5)?1:0;
+	this.ie=this.ie4||this.ie5||this.ie6
+	this.mac=this.agent.indexOf("Mac")>-1
+	this.ns6=(this.dom && parseInt(this.ver) >= 5) ?1:0; 
+	this.ns4=(document.layers && !this.dom)?1:0;
+	this.bw=(this.ie6 || this.ie5 || this.ie4 || this.ns4 || this.ns6 || this.opera5)
+	return this
+}
+var bw=new lib_bwcheck()
+
+
+if(document.layers){ //NS4 resize fix...
+	scrX= innerWidth; scrY= innerHeight;
+	onresize= function(){if(scrX!= innerWidth || scrY!= innerHeight){history.go(0)} }
+}
+
+/****
+Variables to set 
+****/
+msgFont="arial,helvetica"	// The font for the message
+msgFontSize=12			// Set the fontSize in px
+msgFontColor="#000000"		// Set the fontColor
+msgWidth="150"			// Set the width of the messageblock here for netscape 4
+
+//Set the text you want to display on mouseover here.
+messages=new Array()
+messages[0]="<img src=\"logosmall.gif\" width=\"150\" height=\"32\" alt=\"\" border=\"0\"><br>"
+messages[1]="Home"
+messages[2]="AJ Media Project 2005"
+messages[3]="Games Development"
+messages[4]="Micromouse"
+messages[5]="Web Design"
+messages[6]="Organisation Structure"
+messages[7]="History and Achievements"
+messages[8]="Why CXtreme?"
+messages[9]="Members"
+
+/********************************************************************************
+You don't have to change anything below this
+********************************************************************************/
+
+//ChangeText object constructor.
+function makeChangeTextObj(obj){
+   	this.css = bw.dom?document.getElementById(obj).style:bw.ie4?document.all[obj].style:bw.ns4?document.layers[obj]:0;	
+   	this.writeref = bw.dom?document.getElementById(obj):bw.ie4?document.all[obj]:bw.ns4?document.layers[obj].document:0;	
+	this.writeIt = b_writeIt;					
+}
+function b_writeIt(text,num){
+	if (bw.ns4){
+		this.writeref.write(text)
+		this.writeref.close()
+	}
+    else this.writeref.innerHTML = messages[num]
+}
+
+//The mouseover function. Calls the writeIt method to write the text to the div.
+function changeText(num){
+	if(bw.bw) oMessage.writeIt('<table width="'+msgWidth+'" border="0" cellpadding="0" cellspacing="0"><tr><td><span style="font-size:'+msgFontSize+'px; font-family:'+msgFont+'; color:'+msgFontColor+'">'+messages[num]+'</span></td></tr></table>', num)
+}
+
+//The init function. Calls the object constructor and initiates some properties.
+function changeTextInit(){
+	//Fixing the browsercheck for opera... this can be removed if the browsercheck has been updated!!
+	bw.opera5 = (navigator.userAgent.indexOf("Opera")>-1 && document.getElementById)?true:false
+	if (bw.opera5) bw.ns6 = 0
+	
+	oMessage = new makeChangeTextObj('divMessage')
+	oLinks = new makeChangeTextObj('divLinks')
+	//Setting the style properties of the text layer.
+	if(bw.dom || bw.ie4){
+		with(oMessage.writeref.style){fontFamily=msgFont; fontSize=msgFontSize+"px"; color=msgFontColor}
+	}
+	//Both layers are hidden by default to prevent users from mousing over them and creating errors while the page loads.
+	oMessage.css.visibility= "visible"
+	oLinks.css.visibility= "visible"
+}
+
+//If the browser is ok, the init function is called on pageload. 
+if (bw.bw) onload = changeTextInit
+</script>
+
+</head>
+
+<body marginleft="0" marginheight="0">
+
+<div id="divLinks">
+<a href="javascript:;" target="mainFrame" onClick="MM_nbGroup('down','group1','icon1_off2','',1)" onMouseOver="MM_nbGroup('over','icon1_off2','icon1.gif','',1);changeText(1)" onMouseOut="MM_nbGroup('out');changeText(0)"><img src="icon1_off.gif" alt="" name="icon1_off2" width="30" height="30" border="0" onLoad=""></a>
+
+<a href="ajmedia.htm" target="mainFrame" onClick="MM_nbGroup('down','group1','icon2_off','',1)" onMouseOver="MM_nbGroup('over','icon2_off','icon2.gif','',1);changeText(2)" onMouseOut="MM_nbGroup('out');changeText(0)"><img src="icon2_off.gif" alt="" name="icon2_off" width="30" height="30" border="0" onload=""></a>
+
+<a href="games.htm" target="mainFrame" onClick="MM_nbGroup('down','group1','icon3_off','',1)" onMouseOver="MM_nbGroup('over','icon3_off','icon3.gif','',1);changeText(3)" onMouseOut="MM_nbGroup('out');changeText(0)"><img src="icon3_off.gif" alt="" name="icon3_off" width="30" height="30" border="0" onLoad=""></a>
+
+<a href="micromouse.htm" target="mainFrame" onClick="MM_nbGroup('down','group1','icon4_off','',1)" onMouseOver="MM_nbGroup('over','icon4_off','icon4.gif','',1);changeText(4)" onMouseOut="MM_nbGroup('out');changeText(0)"><img src="icon4_off.gif" alt="" name="icon4_off" width="30" height="30" border="0" onLoad=""></a>
+
+<a href="web.htm" target="mainFrame" onClick="MM_nbGroup('down','group1','icon5_off','',1)" onMouseOver="MM_nbGroup('over','icon5_off','icon5.gif','',1);changeText(5)" onMouseOut="MM_nbGroup('out');changeText(0)"><img src="icon5_off.gif" alt="" name="icon5_off" width="30" height="30" border="0" onLoad=""></a>
+
+<a href="org.htm" target="mainFrame" onClick="MM_nbGroup('down','group1','icon6_off','',1)" onMouseOver="MM_nbGroup('over','icon6_off','icon6.gif','',1);changeText(6)" onMouseOut="MM_nbGroup('out');changeText(0)"><img src="icon6_off.gif" alt="" name="icon6_off" width="30" height="30" border="0" onLoad=""></a>
+
+<a href="history.htm" target="mainFrame" onClick="MM_nbGroup('down','group1','icon7_off','',1)" onMouseOver="MM_nbGroup('over','icon7_off','icon7.gif','',1);changeText(7)" onMouseOut="MM_nbGroup('out');changeText(0)"><img src="icon7_off.gif" alt="" name="icon7_off" width="30" height="30" border="0" onLoad=""></a>
+
+<a href="cxtreme.htm" target="mainFrame" onClick="MM_nbGroup('down','group1','icon8_off','',1)" onMouseOver="MM_nbGroup('over','icon8_off','icon8.gif','',1);changeText(8)" onMouseOut="MM_nbGroup('out');changeText(0)"><img src="icon8_off.gif" alt="" name="icon8_off" width="30" height="30" border="0" onLoad=""></a>
+
+<a href="members.htm" target="mainFrame" onClick="MM_nbGroup('down','group1','icon9_off','',1)" onMouseOver="MM_nbGroup('over','icon9_off','icon9.gif','',1);changeText(9)" onMouseOut="MM_nbGroup('out');changeText(0)"><img src="icon9_off.gif" alt="" name="icon9_off" width="30" height="30" border="0" onload=""></a>
+</div>
+
+<div id="divMessage">
+<img src="logosmall.gif" width="150" height="32" alt="" border="0">
+</div>
+
+<div style="position: absolute; top:33px; left:0px;">
+<font class="bot">[Best Viewed at 800x600 IE 6.0 | Ver 3.0 | Last Updated: 18/01/05 | Copyright &copy; 2005 AJCC, Inc.]</font>
+</div>
+
+</body>
+</html>
+

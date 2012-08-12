@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>inspire - group project on the Middle East</title>
+<LINK href="styles.css" type=text/css rel=stylesheet>
+<LINK href="menu.css" type=text/css rel=stylesheet>
+
+<script language="javascript">
+//toggles layer visibility on and off
+
+function show(id) {
+	document.getElementById(id).style.visibility = "visible";
+}
+function hide(id) {
+	document.getElementById(id).style.visibility = "hidden";
+}
+
+</script>
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#000000" onLoad="MM_preloadImages('home_over.gif','intro_over.gif','about_over.gif','links_over.gif','credits_over.gif')">
+<table width="75%" border="0">
+  <tr> 
+    <td colspan="5"><img src="head.gif" width="796" height="57"></td>
+  </tr>
+
+  <tr> 
+    <td><a href="inspire.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','home_over.gif',1)"><img src="home.gif" name="Image2" width="159" height="30" border="0"></a></td>
+    <td><a href="intro.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','intro_over.gif',1)"><img src="intro_over.gif" width="159" height="30"></a></td>
+    <td><a href="about.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','about_over.gif',1)"><img src="about.gif" name="Image4" width="159" height="30" border="0"></a></td>
+    <td><a href="links.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','links_over.gif',1)"><img src="links.gif" name="Image5" width="159" height="30" border="0"></a></td>
+    <td><a href="credits.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','credits_over.gif',1)"><img src="credits.gif" name="Image6" width="159" height="30" border="0"></a></td>
+  </tr>
+
+  <tr> 
+<a name="top"></a>
+    <td colspan="4"></td>
+    <td rowspan="12" valign="top"> 
+      <div class="buttonscontainer"> 
+        <div class="buttons"> <a id="side" href="intro/aim.htm" target="main">Aim of Website</a> 
+<a id="side" href="intro/us.htm" target="main">About Us</a>
+<a id="side" href="#" onclick="show('country');">Brief History</a>
+</div>
+</div>
+
+<div id="country" style="visibility:hidden">
+<a href="history/saudi.htm" target="main">Saudi Arabia</a><br>
+<a href="history/egypt.htm" target="main">Egypt</a><br>
+<a href="history/uae.htm" target="main">UAE</a>
+</div>
+
+</td>
+</tr>
+
+  <tr>
+<td colspan="5"><IFRAME name="main" src="black.htm" frameBorder=0 width=640 height=480></IFRAME></td>
+  </tr>
+<tr>
+    <td colspan="5">Best viewed at 800x600 resolution.</td>
+  </tr>
+</table>
+</body>
+</html>

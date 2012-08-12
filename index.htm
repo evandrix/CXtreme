@@ -1,0 +1,37 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Loading...</title>
+</head>
+
+<body>
+<p>
+<form name=loading>
+<div align=center style="position: absolute; top:300px; left:400px;">
+ <p> Loading... </p> <p>
+  <input style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bolder; PADDING-BOTTOM: 0px; COLOR: rgb(124,119,119); BORDER-TOP-STYLE: none; PADDING-TOP: 0px; FONT-FAMILY: Arial; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: white; BORDER-BOTTOM-STYLE: none" size=40 name=chart>
+  <br>
+  <input style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; COLOR: rgb(138,134,134); BORDER-BOTTOM: medium none; TEXT-ALIGN: center" size=46 name=percent>
+<script> 
+var bar = 0 
+var line = "|" 
+var amount ="|" 
+count() 
+function count(){ 
+bar= bar+1
+amount =amount  +  line 
+document.loading.chart.value=amount 
+document.loading.percent.value=bar+"%" 
+if (bar<100) 
+{setTimeout("count()",20);} 
+else 
+{window.location = "enter.htm";} 
+} 
+  </script>
+</div>
+</body>
+
+</html>

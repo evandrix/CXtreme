@@ -1,0 +1,17 @@
+.buttonscontainer {width: 160px;}
+
+.buttons a {color: ;
+background-color: ;
+padding: 2px;
+padding-left: 3px;
+display: block;
+border-left: 10px solid ;
+font: 13px Arial, sans-serif;
+font-weight: bold;
+text-decoration: none;
+text-align: left;
+margin-top: 1px;}
+
+.buttons a:hover {border-left: 10px solid ;
+text-decoration: none;
+color: ;}

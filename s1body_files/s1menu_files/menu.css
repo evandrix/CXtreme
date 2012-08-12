@@ -1,0 +1,15 @@
+BODY {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffef
+}
+TH {
+	FONT-SIZE: xx-small; CURSOR: hand; COLOR: black; FONT-FAMILY: Arial
+}
+TD {
+	FONT-SIZE: xx-small; CURSOR: hand; COLOR: black; FONT-FAMILY: Arial
+}
+A {
+	TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}

@@ -1,0 +1,78 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #000000; FONT-SIZE: 10pt; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #ffffff; COLOR: #ffffff; SCROLLBAR-3DLIGHT-COLOR: #ffffff; LINE-HEIGHT: 125%; SCROLLBAR-ARROW-COLOR: #ffffff; SCROLLBAR-TRACK-COLOR: #000000; FONT-FAMILY: Tahoma; SCROLLBAR-DARKSHADOW-COLOR: #000000; LETTER-SPACING: 1px
+}
+H1 {
+	MARGIN-TOP: 0px; FONT-WEIGHT: bold; FONT-SIZE: 12pt; MARGIN-BOTTOM: 0px; COLOR: #ffff99; LINE-HEIGHT: 100%; FONT-FAMILY: Arial; LETTER-SPACING: 1px
+}
+TABLE {
+	FONT-SIZE: 12pt; COLOR: #cc9900; LINE-HEIGHT: 100%; FONT-FAMILY: Arial; LETTER-SPACING: 1px
+}
+A:link {
+	FONT-SIZE: 10pt; COLOR: #cc9900; LINE-HEIGHT: 100%; FONT-FAMILY: Arial; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-SIZE: 10pt; COLOR: #cc9900; LINE-HEIGHT: 100%; FONT-FAMILY: Arial; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+A:active {
+	FONT-SIZE: 10pt; COLOR: #ffcc00; LINE-HEIGHT: 100%; FONT-FAMILY: Arial; LETTER-SPACING: 0px; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 10pt; COLOR: #66ffff; LINE-HEIGHT: 100%; FONT-FAMILY: Arial; LETTER-SPACING: 0px; TEXT-DECORATION: none; background-color: #CFE0F9; color: #5675A5; border: solid 1px #666666; padding: 0px; margin-bottom: 0px;
+}
+.textbox {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; SCROLLBAR-FACE-COLOR: #cccccc; FONT-SIZE: x-small; BACKGROUND: #f7f7ff; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; BORDER-LEFT: #000000 1px solid; SCROLLBAR-SHADOW-COLOR: #ffffff; COLOR: #000000; SCROLLBAR-3DLIGHT-COLOR: #ffffff; SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-TRACK-COLOR: #ffffff; BORDER-BOTTOM: #000000 1px solid; FONT-FAMILY: Verdana,Arial,Helvetica; SCROLLBAR-DARKSHADOW-COLOR: #ffffff; TEXT-ALIGN: left
+}
+SELECT {
+	BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; FONT: 12px geneva, verdana, arial, sans-serif; BORDER-LEFT: rgb(128,128,128) 1px solid; COLOR: #333333; BORDER-BOTTOM: rgb(128,128,128) 1px solid; BACKGROUND-COLOR: #f7f7ff
+}
+INPUT {
+	BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; FONT: 12px geneva, verdana, arial, sans-serif; BORDER-LEFT: rgb(128,128,128) 1px solid; COLOR: #333333; BORDER-BOTTOM: rgb(128,128,128) 1px solid; BACKGROUND-COLOR: #f7f7ff
+}
+TEXTAREA {
+	BORDER-RIGHT: rgb(128,128,128) 1px solid; BORDER-TOP: rgb(128,128,128) 1px solid; FONT: 12px geneva, verdana, arial, sans-serif; BORDER-LEFT: rgb(128,128,128) 1px solid; COLOR: #333333; BORDER-BOTTOM: rgb(128,128,128) 1px solid; BACKGROUND-COLOR: #f7f7ff
+}
+TD {
+	FONT-SIZE: 12pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+DIV {
+	FONT-FAMILY: Verdana,Arial,Helvetica
+}
+.size8 {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+.size10 {
+	FONT-SIZE: 10pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+.size12 {
+	FONT-SIZE: 12pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+.size14 {
+	FONT-SIZE: 14pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+.size16 {
+	FONT-SIZE: 16pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+.size18 {
+	FONT-SIZE: 18pt; FONT-FAMILY: Verdana,Arial,Helvetica
+}
+TD {
+	FONT-SIZE: xx-small; COLOR: black; FONT-FAMILY: Arial
+}
+TH {
+	FONT-SIZE: xx-small; COLOR: black; FONT-FAMILY: Arial
+}
+FONT {
+	FONT: 10pt; geneva, verdana, arial, sans-serif
+}
+.logo {
+	FONT-SIZE: xx-small; COLOR: black; FONT-FAMILY: Tahoma, Verdana, Arial
+}
+.header {
+	FONT-SIZE: 14pt; COLOR: black; FONT-FAMILY: Tahoma, Verdana, Arial
+}
+.content {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma, Verdana, Arial
+}
+.bot {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Tahoma, Verdana, Arial
+}
